@@ -1,6 +1,5 @@
 //Dynamic programming approach of finding The Longest Increasing Subsequence
 //Algorithm Time Complexity = O(n^2) 
-//Designed by: Mihail Shlyukasrki
 //Approach - Dynamic programming with time complexity O(n^2)
 
 
@@ -19,7 +18,7 @@ void write_vector(vector<int>& V)			//the ordinary function for printing the vec
 vector<int> lis(vector<int> const& a)		//Dynamic Programming approach of getting LIS with O(n^2) titme complexity
 {
 	int n = a.size();						//getting the size of the array 
-	vector<int> check(n, 1), hold(n, -1);	// restoring the subsequence we generate an additional auxiliary array p[0…n?1]/additional one to hold items
+	vector<int> check(n, 1), hold(n, -1);	// restoring the subsequence we generate an additional auxiliary array p[0â€¦n?1]/additional one to hold items
 	for (int i = 0; i < n; i++)				//compuing alongside the array check[]. hold[i] will be the index j and hold[i] follwoing thru the computation of d[j]
 	{										//of the second last element in the longest increasing subsequence ending in i.
 		for (int j = 0; j < i; j++)			
